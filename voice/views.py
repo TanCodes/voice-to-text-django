@@ -2,8 +2,6 @@ from django.shortcuts import redirect, render
 import speech_recognition as sr
 import pyttsx3
 
-global result 
-global error
 def home(request):
     if request.method == "POST":
         r = sr.Recognizer()
